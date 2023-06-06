@@ -6,3 +6,13 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+smithay-client-toolkit = "0.17.0"
+smithay-egui = { git = "https://github.com/Smithay/smithay-egui", rev = "197606f" }
+winit = "0.28.6"
+
+[dependencies.smithay]
+version = "0.3"
+git = "https://github.com/Smithay/smithay.git"
+rev = "9459ddd14e"
+default-features = false
+features = ["renderer_glow", "wayland_frontend", "backend_winit"]
